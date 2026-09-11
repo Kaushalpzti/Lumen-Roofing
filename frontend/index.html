@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumen Roofing | Dallas–Fort Worth Roofing Experts</title>
+    <meta name="description" content="From unexpected storm damage to complete roof replacement, Lumen Roofing helps DFW homeowners protect their homes with quality roofing and a straight-forward process.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/tailwind-config.js"></script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-white text-navy overflow-x-hidden">
+
+    <!-- Utility Bar -->
+    <div class="bg-navy text-white text-sm py-2 px-4 md:px-8 flex justify-between items-center relative z-50">
+        <div class="flex items-center gap-4 text-gray-300">
+            <span class="hidden md:inline flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4"></i> Serving Dallas–Fort Worth</span>
+            <span class="hidden md:inline text-gray-600">|</span>
+            <span class="flex items-center gap-2"><i data-lucide="shield-check" class="w-4 h-4"></i> Licensed & Insured</span>
+        </div>
+        <div>
+            <a href="tel:+14694075005" class="flex items-center gap-2 font-medium hover:text-electric transition-colors">
+                <i data-lucide="phone" class="w-4 h-4"></i>
+                (469) 407-5005
+            </a>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <header id="navbar" class="fixed w-full top-0 z-40 transition-all duration-300 bg-white shadow-sm mt-[36px]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20 md:h-24 transition-all duration-300" id="nav-container">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center cursor-pointer">
+                    <div class="flex items-center gap-2">
+                        <!-- Abstract Geometric Logo mimicking a roof/house structure -->
+                        <div class="w-8 h-8 bg-lumen rounded-bl-xl rounded-tr-xl flex items-center justify-center transform rotate-45">
+                            <div class="w-4 h-4 bg-white rounded-sm transform -rotate-45"></div>
+                        </div>
+                        <span class="font-bold text-2xl tracking-tight text-navy ml-2">LUMEN</span>
+                        <span class="font-light text-2xl tracking-tight text-gray-500">ROOFING</span>
+                    </div>
+                </div>
+
+                <!-- Desktop Menu -->
+                <nav class="hidden md:flex space-x-8 items-center">
+                    <a href="#services" class="text-navy font-medium hover:text-lumen transition-colors text-sm uppercase tracking-wide">Services</a>
+                    <a href="#why-us" class="text-navy font-medium hover:text-lumen transition-colors text-sm uppercase tracking-wide">Why Lumen</a>
+                    <a href="#process" class="text-navy font-medium hover:text-lumen transition-colors text-sm uppercase tracking-wide">Process</a>
+                    <a href="#work" class="text-navy font-medium hover:text-lumen transition-colors text-sm uppercase tracking-wide">Our Work</a>
+                    <a href="#faq" class="text-navy font-medium hover:text-lumen transition-colors text-sm uppercase tracking-wide">FAQ</a>
+                </nav>
+
+                <!-- Desktop CTA -->
+                <div class="hidden md:flex items-center">
+                    <a href="#contact" class="bg-lumen text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors shadow-lg shadow-lumen/30 flex items-center gap-2">
+                        Free Inspection
+                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-navy hover:text-lumen focus:outline-none p-2">
+                        <i data-lucide="menu" class="w-7 h-7"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Panel -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full shadow-xl">
+            <div class="px-4 pt-2 pb-6 space-y-1">
+                <a href="#services" class="block px-3 py-4 text-base font-medium text-navy border-b border-gray-50 mobile-link">Services</a>
+                <a href="#why-us" class="block px-3 py-4 text-base font-medium text-navy border-b border-gray-50 mobile-link">Why Lumen</a>
+                <a href="#process" class="block px-3 py-4 text-base font-medium text-navy border-b border-gray-50 mobile-link">Process</a>
+                <a href="#work" class="block px-3 py-4 text-base font-medium text-navy border-b border-gray-50 mobile-link">Our Work</a>
+                <a href="#faq" class="block px-3 py-4 text-base font-medium text-navy border-b border-gray-50 mobile-link">FAQ</a>
+                <div class="pt-4 px-3">
+                    <a href="#contact" class="w-full bg-lumen text-white px-6 py-4 rounded-lg font-semibold hover:bg-blue-700 transition-colors flex items-center justify-center gap-2 mobile-link">
+                        Get a Free Inspection
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 md:pt-48 md:pb-32 bg-navy overflow-hidden">
+        <!-- Background Pattern/Glow -->
+        <div class="absolute top-0 right-0 w-[800px] h-[800px] bg-lumen/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3 pointer-events-none"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-12 lg:gap-8 items-center">
+                
+                <!-- Hero Text -->
+                <div class="max-w-2xl fade-up">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 border border-white/20 text-white text-sm font-medium mb-6">
+                        <span class="w-2 h-2 rounded-full bg-electric animate-pulse"></span>
+                        DFW's Most Trusted Roofing Experts
+                    </div>
+                    <h1 class="text-5xl md:text-6xl lg:text-7xl font-extrabold text-white tracking-tight leading-[1.1] mb-6">
+                        Built to Protect <br/>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-electric to-lumen">What Matters Most.</span>
+                    </h1>
+                    <p class="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed max-w-xl">
+                        From unexpected storm damage to complete roof replacement, Lumen Roofing helps Dallas–Fort Worth homeowners protect their homes with quality craftsmanship and a straightforward process.
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#contact" class="bg-lumen text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-blue-600 transition-all shadow-glow flex items-center justify-center gap-2 group">
+                            Schedule Free Inspection
+                            <i data-lucide="arrow-right" class="w-5 h-5 group-hover:translate-x-1 transition-transform"></i>
+                        </a>
+                        <a href="tel:+14694075005" class="bg-white/5 border border-white/20 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-white/10 transition-all flex items-center justify-center gap-2">
+                            <i data-lucide="phone" class="w-5 h-5"></i>
+                            (469) 407-5005
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Hero Image & Floating Card -->
+                <div class="relative lg:ml-10 fade-up delay-200 hidden md:block">
+                    <!-- Main Image -->
+                    <div class="relative rounded-3xl overflow-hidden shadow-2xl border border-white/10 aspect-[4/3]">
+                        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Modern home with high quality roof" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-navy/80 to-transparent"></div>
+                    </div>
+
+                    <!-- Floating Trust Card -->
+                    <div class="absolute -bottom-8 -left-8 bg-white p-6 rounded-2xl shadow-premium border border-gray-100 max-w-xs animate-[bounce_6s_ease-in-out_infinite]">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-blue-50 rounded-full flex items-center justify-center flex-shrink-0 text-lumen">
+                                <i data-lucide="check-circle-2" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-navy text-lg leading-tight">Same-Day Inspections</h3>
+                                <p class="text-sm text-gray-500 mt-1">Available across the entire DFW metroplex.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Strip -->
+    <section class="bg-white border-b border-gray-100 py-8 relative z-20 -mt-2">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 divide-x divide-gray-100">
+                <div class="flex flex-col items-center justify-center text-center px-4 fade-up">
+                    <i data-lucide="search" class="w-8 h-8 text-lumen mb-3"></i>
+                    <span class="font-bold text-navy text-sm md:text-base">Free Inspections</span>
+                </div>
+                <div class="flex flex-col items-center justify-center text-center px-4 fade-up delay-100">
+                    <i data-lucide="shield" class="w-8 h-8 text-lumen mb-3"></i>
+                    <span class="font-bold text-navy text-sm md:text-base">Licensed & Insured</span>
+                </div>
+                <div class="flex flex-col items-center justify-center text-center px-4 fade-up delay-200">
+                    <i data-lucide="cloud-lightning" class="w-8 h-8 text-lumen mb-3"></i>
+                    <span class="font-bold text-navy text-sm md:text-base">Storm & Hail Experts</span>
+                </div>
+                <div class="flex flex-col items-center justify-center text-center px-4 fade-up delay-300">
+                    <i data-lucide="map" class="w-8 h-8 text-lumen mb-3"></i>
+                    <span class="font-bold text-navy text-sm md:text-base">DFW Service Area</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 bg-soft">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 fade-up">
+                <h2 class="text-lumen font-bold uppercase tracking-wider text-sm mb-3">Our Expertise</h2>
+                <h3 class="text-4xl md:text-5xl font-extrabold text-navy tracking-tight mb-6">Roofing Services Built Around Your Home.</h3>
+                <p class="text-lg text-slate">Whether it's unexpected weather damage or time for an upgrade, we provide straightforward solutions to keep your home protected.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Service 1 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-premium transition-all duration-300 group fade-up image-hover-zoom border border-gray-100 flex flex-col h-full">
+                    <div class="h-48 relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1515162816999-a0c47dc192f7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Storm Damage" class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm text-navy font-bold text-xs py-1 px-3 rounded-full">01</div>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col justify-between relative">
+                        <div>
+                            <div class="w-12 h-12 bg-blue-50 text-lumen rounded-xl flex items-center justify-center mb-4 transform group-hover:scale-110 transition-transform">
+                                <i data-lucide="wind" class="w-6 h-6"></i>
+                            </div>
+                            <h4 class="text-xl font-bold text-navy mb-2">Storm Damage</h4>
+                            <p class="text-slate text-sm mb-6">Rapid response and thorough inspections after severe Texas storms to secure your property.</p>
+                        </div>
+                        <a href="#contact" class="inline-flex items-center text-sm font-bold text-lumen group-hover:text-blue-800 transition-colors">
+                            Get Assessed <i data-lucide="arrow-right" class="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-premium transition-all duration-300 group fade-up delay-100 image-hover-zoom border border-gray-100 flex flex-col h-full">
+                    <div class="h-48 relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1534274988757-a28bf1a57c17?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Hail Damage" class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm text-navy font-bold text-xs py-1 px-3 rounded-full">02</div>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col justify-between relative">
+                        <div>
+                            <div class="w-12 h-12 bg-blue-50 text-lumen rounded-xl flex items-center justify-center mb-4 transform group-hover:scale-110 transition-transform">
+                                <i data-lucide="cloud-hail" class="w-6 h-6"></i>
+                            </div>
+                            <h4 class="text-xl font-bold text-navy mb-2">Hail Damage</h4>
+                            <p class="text-slate text-sm mb-6">Expert identification of subtle hail impacts that degrade your roof's lifespan over time.</p>
+                        </div>
+                        <a href="#contact" class="inline-flex items-center text-sm font-bold text-lumen group-hover:text-blue-800 transition-colors">
+                            Get Assessed <i data-lucide="arrow-right" class="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-premium transition-all duration-300 group fade-up delay-200 image-hover-zoom border border-gray-100 flex flex-col h-full">
+                    <div class="h-48 relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1613553507747-5f8d62ad5904?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Roof Replacement" class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm text-navy font-bold text-xs py-1 px-3 rounded-full">03</div>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col justify-between relative">
+                        <div>
+                            <div class="w-12 h-12 bg-blue-50 text-lumen rounded-xl flex items-center justify-center mb-4 transform group-hover:scale-110 transition-transform">
+                                <i data-lucide="home" class="w-6 h-6"></i>
+                            </div>
+                            <h4 class="text-xl font-bold text-navy mb-2">Roof Replacement</h4>
+                            <p class="text-slate text-sm mb-6">Complete tear-offs and new installations using premium materials built to last.</p>
+                        </div>
+                        <a href="#contact" class="inline-flex items-center text-sm font-bold text-lumen group-hover:text-blue-800 transition-colors">
+                            Free Estimate <i data-lucide="arrow-right" class="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-premium transition-all duration-300 group fade-up delay-300 image-hover-zoom border border-gray-100 flex flex-col h-full">
+                    <div class="h-48 relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1504307651254-35680f356f27?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Roof Repair" class="w-full h-full object-cover">
+                        <div class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm text-navy font-bold text-xs py-1 px-3 rounded-full">04</div>
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col justify-between relative">
+                        <div>
+                            <div class="w-12 h-12 bg-blue-50 text-lumen rounded-xl flex items-center justify-center mb-4 transform group-hover:scale-110 transition-transform">
+                                <i data-lucide="hammer" class="w-6 h-6"></i>
+                            </div>
+                            <h4 class="text-xl font-bold text-navy mb-2">Roof Repairs</h4>
+                            <p class="text-slate text-sm mb-6">Targeted fixes for leaks, missing shingles, and structural wear to extend your roof's life.</p>
+                        </div>
+                        <a href="#contact" class="inline-flex items-center text-sm font-bold text-lumen group-hover:text-blue-800 transition-colors">
+                            Schedule Repair <i data-lucide="arrow-right" class="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature Section (Storm/Hail) -->
+    <section class="py-24 bg-white overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <!-- Image Side -->
+                <div class="relative fade-up order-2 lg:order-1">
+                    <div class="relative rounded-3xl overflow-hidden shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Roof inspection after storm" class="w-full object-cover aspect-[4/5] lg:aspect-square">
+                        <div class="absolute inset-0 bg-navy/10"></div>
+                    </div>
+                    <!-- decorative dots -->
+                    <div class="absolute -bottom-6 -right-6 w-32 h-32 text-gray-200/50 hidden md:block">
+                         <svg width="100%" height="100%" fill="none" viewBox="0 0 100 100">
+                            <pattern id="dots" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                                <circle fill="currentColor" cx="2" cy="2" r="2"></circle>
+                            </pattern>
+                            <rect x="0" y="0" width="100%" height="100%" fill="url(#dots)"></rect>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Text Side -->
+                <div class="fade-up order-1 lg:order-2">
+                    <div class="flex items-center gap-2 text-lumen font-bold text-sm tracking-wide uppercase mb-4">
+                        <i data-lucide="alert-triangle" class="w-5 h-5"></i> Post-Storm Priority
+                    </div>
+                    <h2 class="text-4xl md:text-5xl font-extrabold text-navy tracking-tight mb-6 leading-tight">
+                        Storm Damage Doesn't Always Look Obvious.
+                    </h2>
+                    <p class="text-lg text-slate mb-8 leading-relaxed">
+                        Severe DFW weather can cause microscopic bruising to shingles or break seals that aren't visible from the ground. Left unchecked, this leads to leaks and structural damage. A professional inspection ensures nothing is missed.
+                    </p>
+
+                    <ul class="space-y-4 mb-10">
+                        <li class="flex items-start gap-4">
+                            <div class="mt-1 w-6 h-6 rounded-full bg-blue-50 text-lumen flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="check" class="w-4 h-4"></i>
+                            </div>
+                            <span class="text-navy font-medium text-lg">Comprehensive roof inspection</span>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <div class="mt-1 w-6 h-6 rounded-full bg-blue-50 text-lumen flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="check" class="w-4 h-4"></i>
+                            </div>
+                            <span class="text-navy font-medium text-lg">Accurate damage identification</span>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <div class="mt-1 w-6 h-6 rounded-full bg-blue-50 text-lumen flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="check" class="w-4 h-4"></i>
+                            </div>
+                            <span class="text-navy font-medium text-lg">Clear, photographic documentation</span>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <div class="mt-1 w-6 h-6 rounded-full bg-blue-50 text-lumen flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="check" class="w-4 h-4"></i>
+                            </div>
+                            <span class="text-navy font-medium text-lg">Honest repair or replacement options</span>
+                        </li>
+                    </ul>
+
+                    <a href="#contact" class="inline-flex bg-navy text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-gray-800 transition-all shadow-lg items-center gap-2 group">
+                        Check Your Roof
+                        <i data-lucide="arrow-right" class="w-5 h-5 group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brand Story (Why Lumen) -->
+    <section id="why-us" class="py-24 bg-navy text-white relative">
+        <div class="absolute inset-0 opacity-10">
+            <img src="https://images.unsplash.com/photo-1508450859948-4e04fabaa4ea?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80" class="w-full h-full object-cover" alt="Roofing texture">
+        </div>
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 fade-up">
+            <i data-lucide="shield-check" class="w-12 h-12 text-electric mx-auto mb-6"></i>
+            <h2 class="text-4xl md:text-5xl font-extrabold tracking-tight mb-8">
+                Roofing Is More Than Shingles.<br/> It's Peace of Mind.
+            </h2>
+            <p class="text-xl text-gray-300 leading-relaxed mb-12">
+                At Lumen Roofing, we believe that taking care of your home shouldn't be stressful. We focus on careful inspections, quality workmanship, and straightforward communication. No high-pressure sales—just professional advice and reliable service from a local team you can trust.
+            </p>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 border-t border-white/10 pt-12">
+                <div>
+                    <h4 class="font-bold text-2xl text-white mb-2">Local</h4>
+                    <p class="text-sm text-gray-400">DFW Based</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-2xl text-white mb-2">Quality</h4>
+                    <p class="text-sm text-gray-400">Premium Materials</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-2xl text-white mb-2">Honest</h4>
+                    <p class="text-sm text-gray-400">Clear Pricing</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-2xl text-white mb-2">Reliable</h4>
+                    <p class="text-sm text-gray-400">On-Time Execution</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="py-24 bg-soft">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-20 fade-up">
+                <h2 class="text-lumen font-bold uppercase tracking-wider text-sm mb-3">How We Work</h2>
+                <h3 class="text-4xl font-extrabold text-navy tracking-tight">A Simple, Straightforward Process.</h3>
+            </div>
+
+            <div class="relative">
+                <!-- Connecting Line (Desktop) -->
+                <div class="hidden md:block absolute top-1/2 left-0 w-full h-0.5 bg-gray-200 -translate-y-1/2 z-0"></div>
+
+                <div class="grid md:grid-cols-3 gap-12 relative z-10">
+                    <!-- Step 1 -->
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 text-center relative fade-up">
+                        <div class="w-16 h-16 mx-auto bg-navy text-white rounded-2xl flex items-center justify-center font-bold text-2xl mb-6 shadow-lg -mt-16 transform transition-transform hover:-translate-y-2">
+                            01
+                        </div>
+                        <h4 class="text-2xl font-bold text-navy mb-4">Inspect</h4>
+                        <p class="text-slate">We perform a thorough, no-obligation assessment of your roof to identify any hidden storm damage, wear, or leaks.</p>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 text-center relative fade-up delay-100">
+                        <div class="w-16 h-16 mx-auto bg-lumen text-white rounded-2xl flex items-center justify-center font-bold text-2xl mb-6 shadow-lg shadow-lumen/30 -mt-16 transform transition-transform hover:-translate-y-2">
+                            02
+                        </div>
+                        <h4 class="text-2xl font-bold text-navy mb-4">Explain</h4>
+                        <p class="text-slate">We clearly explain what we found, share photo evidence, and discuss your options so you can make an informed decision.</p>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 text-center relative fade-up delay-200">
+                        <div class="w-16 h-16 mx-auto bg-electric text-white rounded-2xl flex items-center justify-center font-bold text-2xl mb-6 shadow-lg shadow-electric/30 -mt-16 transform transition-transform hover:-translate-y-2">
+                            03
+                        </div>
+                        <h4 class="text-2xl font-bold text-navy mb-4">Restore</h4>
+                        <p class="text-slate">Our expert crew moves forward with the repair or full replacement, ensuring clean-up and a high-quality finish.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Showcase -->
+    <section id="work" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12 fade-up">
+                <div class="max-w-2xl">
+                    <h2 class="text-lumen font-bold uppercase tracking-wider text-sm mb-3">Our Portfolio</h2>
+                    <h3 class="text-4xl font-extrabold text-navy tracking-tight">Work That Speaks for Itself.</h3>
+                </div>
+                <a href="https://www.instagram.com/lumenroofing/" target="_blank" class="hidden md:inline-flex items-center gap-2 text-navy font-bold hover:text-lumen transition-colors mt-6 md:mt-0">
+                    See More on Instagram <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </a>
+            </div>
+
+            <!-- Masonry-style Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <!-- Item 1 -->
+                <div class="relative rounded-2xl overflow-hidden aspect-square group fade-up">
+                    <img src="https://images.unsplash.com/photo-1574362848149-11496d93a7c7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="New roof installation" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-navy/90 via-navy/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                        <div>
+                            <span class="text-electric text-sm font-bold uppercase tracking-wider">Roof Replacement</span>
+                            <h4 class="text-white text-xl font-bold mt-1">Modern Shingle Install</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 2 (Tall) -->
+                <div class="relative rounded-2xl overflow-hidden aspect-square md:aspect-auto md:row-span-2 group fade-up delay-100">
+                    <img src="https://images.unsplash.com/photo-1622675363311-3e1904dc1885?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Roofing worker" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-navy/90 via-navy/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                        <div>
+                            <span class="text-electric text-sm font-bold uppercase tracking-wider">Craftsmanship</span>
+                            <h4 class="text-white text-xl font-bold mt-1">Detail-Oriented Work</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="relative rounded-2xl overflow-hidden aspect-square group fade-up delay-200">
+                    <img src="https://images.unsplash.com/photo-1604871000636-074fa5117945?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Finished beautiful home roof" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-navy/90 via-navy/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                        <div>
+                            <span class="text-electric text-sm font-bold uppercase tracking-wider">Completed Project</span>
+                            <h4 class="text-white text-xl font-bold mt-1">DFW Residential</h4>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Item 4 -->
+                 <div class="relative rounded-2xl overflow-hidden aspect-square group fade-up lg:col-span-2">
+                    <img src="https://images.unsplash.com/photo-1541888081682-1c2106e4099d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Large roof perspective" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-navy/90 via-navy/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                        <div>
+                            <span class="text-electric text-sm font-bold uppercase tracking-wider">Storm Recovery</span>
+                            <h4 class="text-white text-xl font-bold mt-1">Full Property Restoration</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-8 text-center md:hidden">
+                 <a href="https://www.instagram.com/lumenroofing/" target="_blank" class="inline-flex items-center gap-2 text-navy font-bold hover:text-lumen transition-colors">
+                    See More on Instagram <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Connect Section -->
+    <section class="py-20 bg-navy text-white border-y border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center fade-up">
+            <svg class="w-12 h-12 mx-auto mb-6 text-pink-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+            <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight mb-4">See Lumen in Action.</h2>
+            <p class="text-gray-400 mb-8 max-w-2xl mx-auto">Follow the latest roofing projects, inspections, and behind-the-scenes work from our team across the Dallas-Fort Worth metroplex.</p>
+            <a href="https://www.instagram.com/lumenroofing/" target="_blank" class="inline-flex items-center gap-2 bg-white text-navy px-8 py-4 rounded-xl font-bold hover:bg-gray-100 transition-colors shadow-lg">
+                Follow @lumenroofing <i data-lucide="external-link" class="w-4 h-4"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="py-24 bg-soft">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-3xl p-10 md:p-16 shadow-xl border border-gray-100 flex flex-col md:flex-row items-center gap-12 fade-up">
+                <div class="md:w-1/2">
+                    <h2 class="text-4xl md:text-5xl font-extrabold text-navy tracking-tight leading-tight mb-6">
+                        Less Stress.<br/>
+                        More Clarity.<br/>
+                        <span class="text-lumen">A Roof You Can Count On.</span>
+                    </h2>
+                    <p class="text-lg text-slate mb-8">
+                        We know that replacing or repairing a roof isn't something you do every day. That's why we guide you through the process, answer every question, and ensure the final result exceeds your expectations.
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <div class="flex -space-x-4">
+                            <img class="w-12 h-12 rounded-full border-2 border-white object-cover" src="https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-4.0.3&auto=format&fit=facearea&facepad=2&w=100&h=100&q=80" alt="Customer">
+                            <img class="w-12 h-12 rounded-full border-2 border-white object-cover" src="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&auto=format&fit=facearea&facepad=2&w=100&h=100&q=80" alt="Customer">
+                            <img class="w-12 h-12 rounded-full border-2 border-white object-cover" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=facearea&facepad=2&w=100&h=100&q=80" alt="Customer">
+                        </div>
+                        <span class="text-sm font-medium text-navy">Trusted by DFW Homeowners</span>
+                    </div>
+                </div>
+                <div class="md:w-1/2 grid grid-cols-2 gap-4">
+                    <div class="bg-soft p-6 rounded-2xl">
+                        <i data-lucide="message-square" class="w-8 h-8 text-lumen mb-4"></i>
+                        <h4 class="font-bold text-navy mb-2">Clear Communcation</h4>
+                        <p class="text-sm text-slate">You'll always know the status of your project.</p>
+                    </div>
+                    <div class="bg-soft p-6 rounded-2xl mt-8">
+                        <i data-lucide="award" class="w-8 h-8 text-lumen mb-4"></i>
+                        <h4 class="font-bold text-navy mb-2">Quality Materials</h4>
+                        <p class="text-sm text-slate">We don't cut corners on the products we use.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-24 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 fade-up">
+            <div class="text-center mb-16">
+                <h2 class="text-lumen font-bold uppercase tracking-wider text-sm mb-3">Common Questions</h2>
+                <h3 class="text-4xl font-extrabold text-navy tracking-tight">Frequently Asked Questions</h3>
+            </div>
+
+            <div class="space-y-4" id="faq-accordion">
+                <!-- FAQ Item 1 -->
+                <div class="border border-gray-200 rounded-2xl overflow-hidden transition-all duration-300 faq-item">
+                    <button class="w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none bg-white hover:bg-gray-50 transition-colors faq-button">
+                        <span class="font-bold text-navy text-lg">Do you offer free roof inspections?</span>
+                        <i data-lucide="plus" class="w-5 h-5 text-lumen transform transition-transform duration-300 icon"></i>
+                    </button>
+                    <div class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out faq-content bg-white">
+                        <div class="px-6 pb-5 text-slate">
+                            Yes, we provide comprehensive, no-obligation roof inspections for homeowners across the Dallas-Fort Worth area. We'll assess the condition of your roof and provide honest recommendations.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="border border-gray-200 rounded-2xl overflow-hidden transition-all duration-300 faq-item">
+                    <button class="w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none bg-white hover:bg-gray-50 transition-colors faq-button">
+                        <span class="font-bold text-navy text-lg">Do you handle storm and hail damage?</span>
+                        <i data-lucide="plus" class="w-5 h-5 text-lumen transform transition-transform duration-300 icon"></i>
+                    </button>
+                    <div class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out faq-content bg-white">
+                        <div class="px-6 pb-5 text-slate">
+                            Absolutely. We specialize in identifying and repairing damage caused by severe Texas weather, including high winds and hail. We can help you understand the extent of the damage to secure your home.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="border border-gray-200 rounded-2xl overflow-hidden transition-all duration-300 faq-item">
+                    <button class="w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none bg-white hover:bg-gray-50 transition-colors faq-button">
+                        <span class="font-bold text-navy text-lg">When should I repair my roof instead of replacing it?</span>
+                        <i data-lucide="plus" class="w-5 h-5 text-lumen transform transition-transform duration-300 icon"></i>
+                    </button>
+                    <div class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out faq-content bg-white">
+                        <div class="px-6 pb-5 text-slate">
+                            If the damage is localized (like a few missing shingles from wind) and the rest of the roof is relatively new and in good condition, a repair is usually sufficient. However, if the roof is old, has widespread hail damage, or frequent leaks, a full replacement is often the safer, more cost-effective long-term choice. We will advise you on the best path forward after inspection.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="border border-gray-200 rounded-2xl overflow-hidden transition-all duration-300 faq-item">
+                    <button class="w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none bg-white hover:bg-gray-50 transition-colors faq-button">
+                        <span class="font-bold text-navy text-lg">What happens during a roof inspection?</span>
+                        <i data-lucide="plus" class="w-5 h-5 text-lumen transform transition-transform duration-300 icon"></i>
+                    </button>
+                    <div class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out faq-content bg-white">
+                        <div class="px-6 pb-5 text-slate">
+                            Our team will safely examine your roof's exterior surface, looking for missing or damaged shingles, failing flashing, and signs of granular loss. We document our findings with photos so you can see exactly what we see, followed by a clear discussion of our recommendations.
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- FAQ Item 5 -->
+                 <div class="border border-gray-200 rounded-2xl overflow-hidden transition-all duration-300 faq-item">
+                    <button class="w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none bg-white hover:bg-gray-50 transition-colors faq-button">
+                        <span class="font-bold text-navy text-lg">Do you serve the entire Dallas–Fort Worth area?</span>
+                        <i data-lucide="plus" class="w-5 h-5 text-lumen transform transition-transform duration-300 icon"></i>
+                    </button>
+                    <div class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out faq-content bg-white">
+                        <div class="px-6 pb-5 text-slate">
+                            Yes, Lumen Roofing proudly provides roofing services across the greater Dallas-Fort Worth metroplex.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA & Contact Section -->
+    <section id="contact" class="py-24 bg-navy relative overflow-hidden">
+        <!-- Abstract bg shapes -->
+        <div class="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
+            <div class="absolute top-[-10%] right-[-5%] w-[500px] h-[500px] rounded-full bg-lumen/10 blur-[100px]"></div>
+            <div class="absolute bottom-[-10%] left-[-5%] w-[600px] h-[600px] rounded-full bg-electric/10 blur-[120px]"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                
+                <!-- CTA Text -->
+                <div class="fade-up">
+                    <h2 class="text-4xl md:text-6xl font-extrabold text-white tracking-tight leading-tight mb-6">
+                        Think Your Roof Needs Attention?
+                    </h2>
+                    <p class="text-xl text-gray-300 mb-8 max-w-lg">
+                        Let’s take a closer look and figure out the right next step. Request your free inspection today.
+                    </p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center border border-white/20 text-electric">
+                                <i data-lucide="phone" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <p class="text-gray-400 text-sm">Prefer to talk now?</p>
+                                <a href="tel:+14694075005" class="text-white font-bold text-xl hover:text-electric transition-colors">(469) 407-5005</a>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center border border-white/20 text-electric">
+                                <i data-lucide="map-pin" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <p class="text-gray-400 text-sm">Service Area</p>
+                                <p class="text-white font-bold text-lg">Dallas–Fort Worth, TX</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form -->
+                <div class="bg-white rounded-3xl p-8 md:p-10 shadow-2xl fade-up delay-200">
+                    <h3 class="text-2xl font-bold text-navy mb-6">Request Your Free Inspection</h3>
+                    
+                    <form id="lead-form" class="space-y-5">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-slate mb-1">Full Name *</label>
+                                <input type="text" id="name" name="name" required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-lumen focus:border-lumen outline-none transition-all bg-gray-50 focus:bg-white" placeholder="John Doe">
+                            </div>
+                            <div>
+                                <label for="phone" class="block text-sm font-medium text-slate mb-1">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-lumen focus:border-lumen outline-none transition-all bg-gray-50 focus:bg-white" placeholder="(123) 456-7890">
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-slate mb-1">Email Address</label>
+                            <input type="email" id="email" name="email" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-lumen focus:border-lumen outline-none transition-all bg-gray-50 focus:bg-white" placeholder="john@example.com">
+                        </div>
+
+                        <div>
+                            <label for="address" class="block text-sm font-medium text-slate mb-1">Property Address *</label>
+                            <input type="text" id="address" name="address" required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-lumen focus:border-lumen outline-none transition-all bg-gray-50 focus:bg-white" placeholder="123 Main St, City, TX">
+                        </div>
+
+                        <div>
+                            <label for="service" class="block text-sm font-medium text-slate mb-1">Service Needed</label>
+                            <div class="relative">
+                                <select id="service" name="service" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-lumen focus:border-lumen outline-none transition-all bg-gray-50 focus:bg-white appearance-none text-navy">
+                                    <option value="inspection">Free Inspection</option>
+                                    <option value="storm">Storm/Hail Damage</option>
+                                    <option value="replacement">Roof Replacement</option>
+                                    <option value="repair">Roof Repair</option>
+                                </select>
+                                <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-slate">
+                                    <i data-lucide="chevron-down" class="w-4 h-4"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-slate mb-1">Message (Optional)</label>
+                            <textarea id="message" name="message" rows="3" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-lumen focus:border-lumen outline-none transition-all bg-gray-50 focus:bg-white resize-none" placeholder="Tell us a bit about your roof..."></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full bg-lumen text-white py-4 rounded-xl font-bold text-lg hover:bg-blue-700 transition-all shadow-lg flex justify-center items-center gap-2 group">
+                            Request My Free Inspection
+                            <i data-lucide="arrow-right" class="w-5 h-5 group-hover:translate-x-1 transition-transform"></i>
+                        </button>
+                        <p class="text-xs text-center text-gray-400 mt-3">We respect your privacy. No spam.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#040a13] text-white pt-16 pb-8 border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                
+                <!-- Brand Info -->
+                <div class="md:col-span-1">
+                    <div class="flex items-center gap-2 mb-6">
+                        <div class="w-6 h-6 bg-lumen rounded-bl-lg rounded-tr-lg flex items-center justify-center transform rotate-45">
+                            <div class="w-3 h-3 bg-white rounded-sm transform -rotate-45"></div>
+                        </div>
+                        <span class="font-bold text-xl tracking-tight text-white">LUMEN</span>
+                        <span class="font-light text-xl tracking-tight text-gray-400">ROOFING</span>
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                        DFW's trusted roofing experts providing honest inspections, quality repairs, and premium roof replacements.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.instagram.com/lumenroofing/" target="_blank" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-400 hover:bg-lumen hover:text-white transition-colors">
+                            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                            <span class="sr-only">Instagram</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-white font-bold mb-6">Quick Links</h4>
+                    <ul class="space-y-3 text-sm text-gray-400">
+                        <li><a href="#services" class="hover:text-electric transition-colors">Services</a></li>
+                        <li><a href="#why-us" class="hover:text-electric transition-colors">Why Lumen</a></li>
+                        <li><a href="#process" class="hover:text-electric transition-colors">Our Process</a></li>
+                        <li><a href="#work" class="hover:text-electric transition-colors">Portfolio</a></li>
+                        <li><a href="#faq" class="hover:text-electric transition-colors">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h4 class="text-white font-bold mb-6">Services</h4>
+                    <ul class="space-y-3 text-sm text-gray-400">
+                        <li><a href="#services" class="hover:text-electric transition-colors">Free Inspections</a></li>
+                        <li><a href="#services" class="hover:text-electric transition-colors">Storm Damage Assessment</a></li>
+                        <li><a href="#services" class="hover:text-electric transition-colors">Hail Damage Repair</a></li>
+                        <li><a href="#services" class="hover:text-electric transition-colors">Roof Replacement</a></li>
+                        <li><a href="#services" class="hover:text-electric transition-colors">Roof Repair</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="text-white font-bold mb-6">Contact Us</h4>
+                    <ul class="space-y-4 text-sm text-gray-400">
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="phone" class="w-5 h-5 text-lumen shrink-0"></i>
+                            <a href="tel:+14694075005" class="hover:text-white transition-colors">(469) 407-5005</a>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i data-lucide="map-pin" class="w-5 h-5 text-lumen shrink-0"></i>
+                            <span>Dallas–Fort Worth, Texas<br/>Serving the Metroplex</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500">
+                <p>&copy; <span id="footer-year"></span> Lumen Roofing. All rights reserved.</p>
+                <div class="flex gap-4">
+                    <button type="button" id="open-privacy" class="hover:text-gray-300 transition-colors">Privacy Policy</button>
+                    <button type="button" id="open-tos" class="hover:text-gray-300 transition-colors">Terms of Service</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Privacy Policy Modal -->
+    <div id="privacy-modal" class="fixed inset-0 bg-black/60 z-50 flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-300 backdrop-blur-sm p-4">
+        <div class="bg-white w-full max-w-3xl rounded-2xl shadow-2xl flex flex-col max-h-[85vh] transform scale-95 transition-transform duration-300 modal-content">
+            <div class="p-6 border-b border-gray-100 flex justify-between items-center shrink-0">
+                <h3 class="text-2xl font-bold text-navy">Privacy Policy</h3>
+                <button type="button" class="close-modal text-gray-400 hover:text-navy transition-colors p-2">
+                    <i data-lucide="x" class="w-6 h-6"></i>
+                </button>
+            </div>
+            <div class="p-6 overflow-y-auto text-slate text-sm space-y-4">
+                <p><strong>Last Updated:</strong> <span id="current-date"></span></p>
+                <p>At Lumen Roofing, we are committed to protecting your privacy and ensuring you have a positive experience on our website and in using our services. This Privacy Policy applies to our website and outlines our data collection, use, and disclosure practices.</p>
+                
+                <h4 class="font-bold text-navy text-base mt-4">1. Information We Collect</h4>
+                <p>We may collect personal information that you provide directly to us, such as your name, phone number, email address, property address, and details regarding your roofing needs when you fill out our contact forms or request a free inspection.</p>
+                
+                <h4 class="font-bold text-navy text-base mt-4">2. How We Use Your Information</h4>
+                <p>The information we collect is used to:</p>
+                <ul class="list-disc pl-5 space-y-1">
+                    <li>Provide, operate, and maintain our services.</li>
+                    <li>Respond to your comments, questions, and requests for inspections.</li>
+                    <li>Communicate with you regarding service updates, offers, and promotions.</li>
+                    <li>Improve our website functionality and user experience.</li>
+                </ul>
+
+                <h4 class="font-bold text-navy text-base mt-4">3. Data Sharing and Disclosure</h4>
+                <p>We do not sell, trade, or rent your personal identification information to others. We may share generic aggregated demographic information not linked to any personal identification information regarding visitors and users with our business partners and trusted affiliates for the purposes outlined above.</p>
+                
+                <h4 class="font-bold text-navy text-base mt-4">4. Security</h4>
+                <p>We implement a variety of security measures to maintain the safety of your personal information. However, no method of transmission over the Internet, or method of electronic storage, is 100% secure.</p>
+                
+                <h4 class="font-bold text-navy text-base mt-4">5. Contact Us</h4>
+                <p>If you have any questions about this Privacy Policy, please contact us at (469) 407-5005.</p>
+            </div>
+            <div class="p-6 border-t border-gray-100 shrink-0 bg-gray-50 rounded-b-2xl flex justify-end">
+                <button type="button" class="close-modal bg-navy text-white px-6 py-2 rounded-lg font-medium hover:bg-gray-800 transition-colors">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Terms of Service Modal -->
+    <div id="tos-modal" class="fixed inset-0 bg-black/60 z-50 flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-300 backdrop-blur-sm p-4">
+        <div class="bg-white w-full max-w-3xl rounded-2xl shadow-2xl flex flex-col max-h-[85vh] transform scale-95 transition-transform duration-300 modal-content">
+            <div class="p-6 border-b border-gray-100 flex justify-between items-center shrink-0">
+                <h3 class="text-2xl font-bold text-navy">Terms of Service</h3>
+                <button type="button" class="close-modal text-gray-400 hover:text-navy transition-colors p-2">
+                    <i data-lucide="x" class="w-6 h-6"></i>
+                </button>
+            </div>
+            <div class="p-6 overflow-y-auto text-slate text-sm space-y-4">
+                <p><strong>Effective Date:</strong> <span id="current-date-tos"></span></p>
+                <p>Welcome to Lumen Roofing. By accessing our website and utilizing our services, you agree to comply with and be bound by the following terms and conditions of use.</p>
+                
+                <h4 class="font-bold text-navy text-base mt-4">1. Acceptance of Terms</h4>
+                <p>By using this website, you represent that you have read, understood, and agree to be bound by these Terms. If you do not agree to these Terms, please do not use our website or services.</p>
+                
+                <h4 class="font-bold text-navy text-base mt-4">2. Services Description</h4>
+                <p>Lumen Roofing provides residential and commercial roofing services, including but not limited to roof inspections, repairs, replacements, and storm damage assessments within the Dallas-Fort Worth metropolitan area. All services are subject to a formal agreement or contract provided after inspection.</p>
+                
+                <h4 class="font-bold text-navy text-base mt-4">3. User Obligations</h4>
+                <p>You agree to provide accurate, current, and complete information when requesting an inspection or communicating with our team. You are responsible for ensuring our team has safe access to your property for scheduled inspections or services.</p>
+                
+                <h4 class="font-bold text-navy text-base mt-4">4. Intellectual Property</h4>
+                <p>All content included on this site, such as text, graphics, logos, images, and software, is the property of Lumen Roofing or its content suppliers and protected by copyright and other laws that protect intellectual property and proprietary rights.</p>
+                
+                <h4 class="font-bold text-navy text-base mt-4">5. Limitation of Liability</h4>
+                <p>In no event shall Lumen Roofing be liable for any direct, indirect, incidental, special, or consequential damages arising out of or in any way connected with the use of this website or with the delay or inability to use this website.</p>
+                
+                <h4 class="font-bold text-navy text-base mt-4">6. Modifications to Terms</h4>
+                <p>We reserve the right to modify these Terms at any time. Your continued use of the website following the posting of changes will mean you accept those changes.</p>
+            </div>
+            <div class="p-6 border-t border-gray-100 shrink-0 bg-gray-50 rounded-b-2xl flex justify-end">
+                <button type="button" class="close-modal bg-navy text-white px-6 py-2 rounded-lg font-medium hover:bg-gray-800 transition-colors">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
