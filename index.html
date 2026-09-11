@@ -56,6 +56,71 @@
         /* Hide scrollbar for gallery */
         .no-scrollbar::-webkit-scrollbar { display: none; }
         .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+        /* ================================
+   PREMIUM DEVELOPER CREDIT
+================================ */
+
+.developer-credit {
+    position: fixed;
+    right: 24px;
+    bottom: 20px;
+    z-index: 9999;
+
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    padding: 8px 13px;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+
+    color: rgba(255, 255, 255, 0.65);
+
+    background: rgba(7, 17, 31, 0.82);
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    border-radius: 6px;
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.18);
+
+    transition: all 0.3s ease;
+}
+
+.developer-credit span {
+    color: rgba(255, 255, 255, 0.55);
+}
+
+.developer-credit a {
+    color: #ffffff;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.developer-credit:hover {
+    background: rgba(7, 17, 31, 0.95);
+    border-color: rgba(255, 255, 255, 0.18);
+    transform: translateY(-2px);
+}
+
+.developer-credit a:hover {
+    color: #72a7ff;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .developer-credit {
+        right: 12px;
+        bottom: 12px;
+        padding: 7px 10px;
+        font-size: 9px;
+    }
+}
     </style>
 </head>
 <body class="bg-white text-navy overflow-x-hidden">
@@ -1057,5 +1122,11 @@
             });
         });
     </script>
+    <div class="developer-credit">
+  <span>Design &amp; Developed by</span>
+  <a href="https://www.instagram.com/kaushalprazapati/" target="_blank" rel="noopener">
+    Kaushal Prazapati
+  </a>
+</div>
 </body>
 </html>
